@@ -1,0 +1,21 @@
+type: object
+description: 编码表
+properties:
+  name:
+    type: string # character varying(255)
+    format: # byte binary date date-time password
+    description: |
+      编码代号
+    example:
+  len:
+    type: integer # integer
+    format: int32 # int32 int64
+    description: |
+      编码数字位长度
+    example:
+  code:
+    type: integer # bigint
+    format: int64
+    description: |
+      当前编号
+    example:

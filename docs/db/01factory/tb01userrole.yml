@@ -1,0 +1,15 @@
+type: object
+description: 用户角色表关联表
+properties:
+  userid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      用户id
+    example:
+  roleid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      角色id
+    example:

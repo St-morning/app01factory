@@ -1,0 +1,7 @@
+FROM dfactory01-docker.pkg.coding.net/01factory/release/doccode:latest
+
+# ADD ./docker/doccode.env ./.env
+
+ENV DOCCODE_PORT 8890
+ENV DOCCODE_TB tb01doccode
+ENV DOCCODE_DB '{"client":"pg","connection":{"host":"db","port":5432,"user":"01factory","password":"1\$QqoQZ5hk\$8yZsVSUpF57EFev42GtFS/","database":"01factory"},"pool":{"min":0,"max":7},"debug":true}'

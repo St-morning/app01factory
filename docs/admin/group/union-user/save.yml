@@ -1,0 +1,56 @@
+post:
+  summary: 保存关联用户
+  description: |
+    保存关联用户
+  tags:
+    - 01factory
+  requestBody:
+    description:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            foo:
+              type: string
+              description: 
+              format: # byte binary date date-time password
+              required: true
+              example: abc
+            bar:
+              type: integer
+              description: 
+              format: int32
+              required: true
+              example: 123
+        # example: { foo: "abc", bar: "123" }
+
+  responses:
+    200:
+      description: 服务调用成功
+      content:
+        application/json:
+          description: 服务调用成功信息
+          properties:
+            ok:
+              description: 是否成功标识
+              type: boolean
+          example: { ok: true }
+    500:
+      description: 服务调用失败
+      content:
+        application/json:
+          schema:
+            description: 服务调用成功信息
+            properties:
+              ok:
+                description: 是否成功标识
+                type: boolean
+                example: false
+              message:
+                description: 失败的原因
+                type: string
+          # example: { ok: false, message: "Error Message" }
+          examples:
+            Error1:
+              value: { ok: false, message: "Error Message" }

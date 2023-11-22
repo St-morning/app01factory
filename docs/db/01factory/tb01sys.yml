@@ -1,0 +1,15 @@
+type: object
+description: 系统表
+properties:
+  key:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      键
+    example:
+  value:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      值
+    example:

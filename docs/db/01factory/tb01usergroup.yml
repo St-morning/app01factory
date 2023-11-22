@@ -1,0 +1,15 @@
+type: object
+description: 用户组别关联表
+properties:
+  groupid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      组别id
+    example:
+  userid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      用户id
+    example:

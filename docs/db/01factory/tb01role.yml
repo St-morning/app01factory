@@ -1,0 +1,21 @@
+type: object
+description: 角色表
+properties:
+  roleid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      角色id
+    example:
+  rolename:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      角色名称
+    example:
+  description:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      角色描述
+    example:

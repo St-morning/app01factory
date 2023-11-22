@@ -1,0 +1,15 @@
+type: object
+description: 角色菜单关联表
+properties:
+  roleid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      角色ID
+    example:
+  menuid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      菜单ID
+    example:

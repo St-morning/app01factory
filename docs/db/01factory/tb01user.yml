@@ -1,0 +1,45 @@
+type: object
+description: 用户表
+properties:
+  userid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      用户名
+    example:
+  username:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      姓名
+    example:
+  sex:
+    type: integer # smallint
+    format: int32
+    description: |
+      性别：0 女 1 男
+    example:
+  password:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      密码
+    example:
+  phone:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      手机号
+    example:
+  state:
+    type: integer # smallint
+    format: int32
+    description: |
+      逻辑删除标识：0 删除 1 在用
+    example:
+  ext:
+    type: unknown # jsonb
+    format: 
+    description: |
+      额外用户信息
+    example:

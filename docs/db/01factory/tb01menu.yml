@@ -1,0 +1,39 @@
+type: object
+description: 菜单表
+properties:
+  menuid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      菜单ID
+    example:
+  menuname:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      菜单名称
+    example:
+  pid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      父级菜单ID
+    example:
+  weight:
+    type: integer # smallint
+    format: int32
+    description: |
+      显示优先级
+    example:
+  url:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      页面地址
+    example:
+  icon:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      菜单图标
+    example:

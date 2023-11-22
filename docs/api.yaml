@@ -1,0 +1,103 @@
+openapi: 3.0.3
+
+info:
+  version: 1.1.0
+  title: API文档
+  description: xxx系统API
+  license:
+    name: MIT
+    url: https://dfactory01.github.io/license
+  contact:
+    name: taoqf
+    email: tao_qiufeng@126.com
+
+servers:
+  - url: /01factory/api
+    description: xxx系统
+  - url: http://127.0.0.1:3456/01factory/api
+    description: xxx系统
+
+tags:
+  - name: 01factory
+    description: 01微工厂
+    externalDocs:
+      description: "查看更多"
+      url: https://dfactory01.github.io
+
+paths:
+  /file/{id}:
+    $ref: ./file/[id].yml
+  /file/upload:
+    $ref: ./file/upload.yml
+  /file/preview/{id}:
+    $ref: ./file/preview/[id].yml
+  /file/preview/imgs/{ids}:
+    $ref: ./file/preview/imgs/[ids].yml
+  /file/delete/{id}:
+    $ref: ./file/delete/[id].yml
+  /doccode:
+    $ref: ./doccode.yml
+  /account/sigin:
+    $ref: ./account/sigin.yml
+  /sys/get-info:
+    $ref: ./sys/get-info.yml
+  /account/rolechoose/switch-role:
+    $ref: ./account/rolechoose/switch-role.yml
+  /account/change-psw:
+    $ref: ./account/change-psw.yml
+  /sys/name:
+    $ref: ./sys/name.yml
+  /account/get-page-info:
+    $ref: ./account/get-page-info.yml
+  /account/reset-psw:
+    $ref: ./account/reset-psw.yml
+  /admin/user/getuser:
+    $ref: ./admin/user/getuser.yml
+  /admin/user/save:
+    $ref: ./admin/user/save.yml
+  /admin/user/disable:
+    $ref: ./admin/user/disable.yml
+  /admin/user/enable:
+    $ref: ./admin/user/enable.yml
+  /admin/user/add:
+    $ref: ./admin/user/add.yml
+  /admin/user/list:
+    $ref: ./admin/user/list.yml
+  /admin/role/add:
+    $ref: ./admin/role/add.yml
+  /admin/role/list:
+    $ref: ./admin/role/list.yml
+  /admin/role/getbyid:
+    $ref: ./admin/role/getbyid.yml
+  /admin/role/update:
+    $ref: ./admin/role/update.yml
+  /admin/role/del:
+    $ref: ./admin/role/del.yml
+  /admin/role/union-user/list-group:
+    $ref: ./admin/role/union-user/list-group.yml
+  /admin/group/add:
+    $ref: ./admin/group/add.yml
+  /admin/group/list:
+    $ref: ./admin/group/list.yml
+  /admin/group/del:
+    $ref: ./admin/group/del.yml
+  /admin/group/modify:
+    $ref: ./admin/group/modify.yml
+  /admin/group/union-user/list-user:
+    $ref: ./admin/group/union-user/list-user.yml
+  /admin/group/union-user/save:
+    $ref: ./admin/group/union-user/save.yml
+  /admin/role/union-user/list-group-users:
+    $ref: ./admin/role/union-user/list-group-users.yml
+  /admin/role/union-user/save:
+    $ref: ./admin/role/union-user/save.yml
+  /admin/role/union-menu/list-menus:
+    $ref: ./admin/role/union-menu/list-menus.yml
+  /admin/role/union-menu/save:
+    $ref: ./admin/role/union-menu/save.yml
+  /file/exp-data:
+    $ref: ./file/exp-data.yml
+  /account/siginup/zhuce:
+    $ref: ./account/siginup/zhuce.yml
+  /account/siginup/jchzhhm:
+    $ref: ./account/siginup/jchzhhm.yml

@@ -1,0 +1,45 @@
+type: object
+description: 日志
+properties:
+  logid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      操作记录id
+    example:
+  userid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      操作人id
+    example:
+  type:
+    type: integer # smallint
+    format: int32
+    description: |
+      操作类型(0新增 1修改 2删除 3未知)
+    example:
+  description:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      操作内容
+    example:
+  tablename:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      操作表名
+    example:
+  serverid:
+    type: string # text
+    format: # byte binary date date-time password
+    description: |
+      服务地址
+    example:
+  tm:
+    type: integer # bigint
+    format: int64
+    description: |
+      操作时间
+    example:
